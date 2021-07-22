@@ -12,7 +12,7 @@ app.on('ready', () => {
     }
   });
 
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
 
   mainWindow.loadURL(`file://${__dirname}/index.html?actual=panel_view_players`);
 
@@ -21,19 +21,6 @@ app.on('ready', () => {
     [{
       label: 'Menu',
       submenu: [
-        {
-          label: 'Save',
-          click() {
-            alert('Not implemented yet');
-          }
-        },
-        {
-          label: 'Load',
-          click() {
-            alert('Not implemented yet');
-          }
-        },
-        { type: 'separator' },
         {
           label: 'Exit',
           click() {
